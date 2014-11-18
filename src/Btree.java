@@ -7,15 +7,15 @@ public class Btree {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	Scanner in=new Scanner(System.in);
-		System.out.println("ÇëÊäÈëºó×º±í´ïÊ½£¨Please input a suffix expression:£©");
+		System.out.println("è¯·è¾“å…¥åç¼€è¡¨è¾¾å¼ï¼š(Please input a suffix expression:)");
 		String s=in.next();
 			BinaryNode b=new BinaryNode('a');
 		b=createTree(s);
-		System.out.println("Ç°×º±í´ïÊ½ÊÇ£º£¨The prefix expression is:£©");
+		System.out.println("å‰ç¼€è¡¨è¾¾å¼æ˜¯ï¼š(The prefix expression is:)");
 		b.preorder(b);
-		System.out.println("\nÖĞ×º±í´ïÊ½ÊÇ£º£¨The infix expression is:£©");
+		System.out.println("\nä¸­ç¼€è¡¨è¾¾å¼æ˜¯:(The infix expression is:)");
 		b.inorder(b);
-		System.out.println("\nºó×º±í´ïÊ½ÊÇ£º£¨The suffix expression is:£©");
+		System.out.println("\nåç¼€è¡¨è¾¾å¼æ˜¯:(The suffix expression is:)");
 		b.postorder(b);
 		System.out.print("\n");
 		
