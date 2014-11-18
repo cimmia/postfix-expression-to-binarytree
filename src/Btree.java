@@ -7,15 +7,15 @@ public class Btree {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	Scanner in=new Scanner(System.in);
-		System.out.println("请输入后缀表达式");
+		System.out.println("请输入后缀表达式（Please input a suffix expression:）");
 		String s=in.next();
 			BinaryNode b=new BinaryNode('a');
 		b=createTree(s);
-
+		System.out.println("前缀表达式是：（The prefix expression is:）");
 		b.preorder(b);
-		System.out.print("\n");
+		System.out.println("\n中缀表达式是：（The infix expression is:）");
 		b.inorder(b);
-		System.out.print("\n");
+		System.out.println("\n后缀表达式是：（The suffix expression is:）");
 		b.postorder(b);
 		System.out.print("\n");
 		
